@@ -23,12 +23,15 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        test: /\.s[ac]ss$/i,
         exclude: /style\.css$/,
-        use: ["style-loader", "css-loader"],
+        exclude: /main\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /style\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        test: /main\.scss$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
 
       {
