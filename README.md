@@ -20,7 +20,9 @@ npm start
 
 ## 4- Start coding!!
 ```
-* There's no need to add your js files to the html, nor the stylesheets *
+* There's no need to add your js files to the html, nor the stylesheets.
+
+* You can use SASS or CSS to style components, everything is configured.
 ```
 ---
 5- To build your project for production run:
