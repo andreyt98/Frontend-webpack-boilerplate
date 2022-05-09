@@ -37,7 +37,7 @@ const rulesForImages = {
   ],
 };
 
-const rules = [styles.apply, styles.createFile,  rulesForHTML, rulesForImages];
+const rules = [styles.apply, styles.createFile, rulesForHTML, rulesForImages];
 
 module.exports = {
   mode: "production",
@@ -48,7 +48,7 @@ module.exports = {
     clean: true,
   },
 
-  module: {rules},
+  module: { rules },
 
   plugins: [
     new HtmlWebPackPlugin({
@@ -72,9 +72,8 @@ module.exports = {
   ],
 
   devServer: {
-    watchFiles: ["./src/*"],
+    watchFiles: ["./src/**/*"],
     open: true,
     hot: true,
-    overlay: false,
   },
 };
